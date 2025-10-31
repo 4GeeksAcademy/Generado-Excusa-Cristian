@@ -1,32 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-     <div class="container">
-      <h1>Generador de Excusas</h1>
-      <hr>
-      <p id="excuse">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador Exusas - Cristian</title>
 
-      </p>
-      <button id="buttonGenerator"> Generador de Excusas Boton</button>
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Generador de Excusas</h1>
+    <hr>
+    <p id="excuse">
+
+    </p>
+
+    <div id="options">
+      <label><input type="checkbox" id="who" checked>Quién</label>
+      <label><input type="checkbox" id="action" checked>Acción</label>
+      <label><input type="checkbox" id="what" checked>Qué</label>
+      <label><input type="checkbox" id="when" checked>Cuándo</label>
     </div>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
 
+    <button id="buttonGenerator">Botón para generar excusa</button>
+  </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>
