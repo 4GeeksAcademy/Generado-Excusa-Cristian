@@ -1,20 +1,41 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: darkgrey;
+body {
+    background-color: #2E3957;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 
-.container{
-    position: absolute;
-    top: 100px;
-    width: 500px;
-    height: 500px;
-    border: solid red 2px;
-    align-items: center;
-    text-align: center;
-    padding: 10px
+.container {
+    background-color: #3C4A72;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    width: 400px;
+    height: 300px
+}
+
+.container p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#buttonGenerator {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1rem;
 }

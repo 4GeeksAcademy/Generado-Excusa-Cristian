@@ -26,7 +26,7 @@ window.onload = function () {
 
   document.getElementById(`excuse`).innerHTML = concatenar();
 
-  document.getElementById(`buttonRandom`).addEventListener(`click`, () =>{
+  document.getElementById(`buttonGenerator`).addEventListener(`click`, () =>{
     document.getElementById(`excuse`).innerHTML = concatenar();
   })
 };
