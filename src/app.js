@@ -1,15 +1,14 @@
 import "bootstrap";
-import "./style.css";
 
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 
-let who = ['Mi perro', 'Mi abuela', 'El cartero', 'Mi loro', 'Mi hermano pequeño', 'Mi jefe'];
-let action = ['se comió', 'se meó sobre', 'rompió', 'perdió', 'quemó', 'tiró por la ventana'];
-let what = ['mis deberes', 'mi teléfono', 'el coche', 'mi ordenador', 'mi cuaderno', 'mi merienda'];
-let when = ['antes de clase', 'mientras dormía', 'cuando estaba en el trabajo', 'durante el partido', 'esta mañana', 'durante la tormenta'];
+const who = ['Mi perro', 'Mi abuela', 'El cartero', 'Mi loro', 'Mi hermano pequeño', 'Mi jefe'];
+const action = ['se comió', 'se meó sobre', 'rompió', 'perdió', 'quemó', 'tiró por la ventana'];
+const what = ['mis deberes', 'mi teléfono', 'el coche', 'mi ordenador', 'mi cuaderno', 'mi merienda'];
+const when = ['antes de clase', 'mientras dormía', 'cuando estaba en el trabajo', 'durante el partido', 'esta mañana', 'durante la tormenta'];
 
 window.onload = function () {
 
@@ -43,11 +42,9 @@ const concatenar = () => {
     return 'Selecciona al menos alguna categoría para generar una excusa';
   }
 
-  return fraseFinal.join(' ');
+  let final = fraseFinal.join(' ');
 
-
-  /*let excuse = `${randomNum(who)} ${randomNum(action)} ${randomNum(what)} ${randomNum(when)}`;
-  return excuse;*/
+  return final.charAt(0).toUpperCase() + final.slice(1);
 }
 
 console.log(concatenar())
